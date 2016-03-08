@@ -10,6 +10,10 @@ module.exports = function (str) {
 
 	var arr = match[0].replace(/#! ?/, '').split(' ');
 	var bin = arr[0].split('/').pop();
+	var arg = arr[1];
 
-	return bin === 'env' ? arr[1] : bin;
+	return (bin === 'env' ?
+		arg :
+		bin + (arg ? ' ' + arg : '')
+	);
 };
