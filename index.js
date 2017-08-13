@@ -12,7 +12,8 @@ module.exports = function (str) {
 	var bin = arr[0].split('/').pop();
 	var arg = arr[1];
 
-	return (bin === 'env' ?
+	return (
+		bin === 'env' ?
 		arg :
 		bin + (arg ? ' ' + arg : '')
 	);
