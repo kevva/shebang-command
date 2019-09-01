@@ -1,8 +1,7 @@
 'use strict';
-var shebangRegex = require('shebang-regex');
 
 module.exports = function (str) {
-	var match = str.match(shebangRegex);
+	var match = str.match(/^#!(.*)/);
 
 	if (!match) {
 		return null;
