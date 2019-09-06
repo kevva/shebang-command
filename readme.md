@@ -32,8 +32,3 @@ shebangCommand('#!/bin/bash');
 Type: `string`
 
 String containing a shebang.
-
-
-## License
-
-MIT © [Kevin Mårtensson](https://github.com/kevva)
