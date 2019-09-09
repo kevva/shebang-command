@@ -16,7 +16,8 @@
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"cmd",
@@ -29,6 +30,7 @@
 	},
 	"devDependencies": {
 		"ava": "^2.3.0",
+		"tsd": "^0.7.4",
 		"xo": "^0.24.0"
 	}
 }
