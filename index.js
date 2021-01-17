@@ -1,5 +1,5 @@
 'use strict';
-const shebangRegex = require('shebang-regex');
+const shebangRegex = /^#!(.*)/;
 
 module.exports = (string = '') => {
 	const match = string.match(shebangRegex);
