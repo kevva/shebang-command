@@ -13,7 +13,7 @@ $ npm install shebang-command
 ## Usage
 
 ```js
-const shebangCommand = require('shebang-command');
+import shebangCommand from 'shebang-command';
 
 shebangCommand('#!/usr/bin/env node');
 //=> 'node'

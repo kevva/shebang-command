@@ -1,5 +1,5 @@
 import test from 'ava';
-import shebangCommand from '.';
+import shebangCommand from './index.js';
 
 test('main', t => {
 	t.is(shebangCommand('#!/usr/bin/env node'), 'node');
