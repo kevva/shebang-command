@@ -1,4 +1,4 @@
-import shebangRegex from 'shebang-regex';
+const shebangRegex = /^#!(.*)/;
 
 export default function shebang(string = '') {
 	const match = string.match(shebangRegex);
