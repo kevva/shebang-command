@@ -3,7 +3,7 @@ Get the command from a shebang.
 
 @example
 ```
-import shebangCommand = require('shebang-command');
+import shebangCommand from 'shebang-command';
 
 shebangCommand('#!/usr/bin/env node');
 //=> 'node'

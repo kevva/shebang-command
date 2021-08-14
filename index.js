@@ -1,7 +1,6 @@
-'use strict';
-const shebangRegex = require('shebang-regex');
+const shebangRegex = /^#!(.*)/;
 
-module.exports = (string = '') => {
+export default function shebang(string = '') {
 	const match = string.match(shebangRegex);
 
 	if (!match) {
@@ -16,4 +15,4 @@ module.exports = (string = '') => {
 	}
 
 	return argument ? `${binary} ${argument}` : binary;
-};
+}
